@@ -1,24 +1,19 @@
-# README
+# How to Run This Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 1. Install all gems
 
-Things you may want to cover:
+    ```cli
+    bundle install
+    ```
 
-* Ruby version
+## 2. Run the server
 
-* System dependencies
+    ```cli
+    rails s
+    ```
 
-* Configuration
+## 3. Styling with TailwindCSS
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    ```cli
+    bin/dev
+    ```
