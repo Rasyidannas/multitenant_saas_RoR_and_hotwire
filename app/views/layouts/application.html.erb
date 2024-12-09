@@ -20,8 +20,11 @@
 
   <body>
     <main class="">
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+      <% if notice.present? %>
+       <p class="absolute h-8 px-4 font-semibold text-gray-200 bg-green-600 rounded-md bottom-6 right-6"><%= notice %></p>
+      <% elsif alert.present? %>
+       <p class="absolute h-8 px-4 font-semibold text-gray-200 bg-red-600 rounded-md bottom-6 right-6"><%= alert %></p>
+      <% end %>
       <%= yield %>
     </main>
   </body>

@@ -1,17 +1,5 @@
 <div class="h-screen px-8 py-4 bg-gray-200">
-  <nav class="flex justify-between mb-8">
-    <h1>
-      <a href="/" class="text-4xl font-extrabold text-gray-900 uppercase hover:italic">logo</a>
-    </h1>
-    <div class="flex gap-6 ">
-      <a href="/users/sign_in" class="flex items-center p-2 font-bold text-gray-200 capitalize bg-orange-600 rounded-md hover:bg-orange-800">Login
-        <span>
-          <%= inline_svg_tag("arrow-right-circle.svg", class: "size-6") %>
-        </span>
-      </a>
-      <a href="/users/sign_up" class="p-2 font-bold text-gray-200 capitalize bg-gray-800 rounded-md hover:bg-gray-600">Signup</a>
-    </div>
-  </nav>
+  <%= render "navbar" %>
 
   <main class="relative grid items-center justify-around md:flex">
     <section class="md:basis-1/2">
