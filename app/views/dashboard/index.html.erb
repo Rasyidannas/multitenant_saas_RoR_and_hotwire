@@ -1,6 +1,10 @@
 <div data-controller="toggle" class="h-screen bg-gray-600">
   <%= render "admin_nav" %>
-
-  <aside></aside>
+  <div class="flex h-full">
+    <%= render "sidebar" %>
+    <main class="text-gray-200" >
+      <h2>This is the main</h2>
+    </main>
+  </div>
   <main></main>
 </div>
