@@ -1,0 +1,16 @@
+<div data-controller="close" data-close-timeout-value="3000" data-close-target="alert" data-close-hidden-class="hidden"
+data-close-target="alert" data-close-hidden-class="hidden">
+   <% if notice.present? %>
+    <p class="absolute flex items-center justify-center h-8 px-4 font-semibold text-gray-200 bg-green-600 rounded-md bottom-6 right-6"><%= notice %>
+      <span data-action="click->close#hide" class="cursor-pointer">
+        <%= inline_svg_tag("close.svg") %>
+      </span>
+    </p>
+    <% elsif alert.present? %>
+    <p class="absolute flex items-center justify-center h-8 px-4 font-semibold text-gray-200 bg-red-600 rounded-md bottom-6 right-6"><%= alert %>
+      <span data-action="click->close#hide" class="cursor-pointer">
+        <%= inline_svg_tag("close.svg") %>
+      </span>
+    </p>
+    <% end %>
+</div>
